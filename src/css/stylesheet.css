@@ -1,0 +1,18 @@
+:root {
+  --brown: #391a05;
+  --blue: #0067ff;
+  --font-primary: "Work Sans", sans-serif;
+  --font-secondary: "Georgia", serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-primary);
+  color: var(--brown);
+}
+
+p {
+  font-family: var(--font-secondary);
+  color: var(--brown);
+}
