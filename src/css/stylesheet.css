@@ -5,11 +5,23 @@
   --font-secondary: "Georgia", serif;
 }
 
+body {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
 h1,
 h2,
-h3 {
+h3,
+a,
+a:visited {
   font-family: var(--font-primary);
   color: var(--brown);
+}
+
+h1,
+h2 {
+  font-weight: 500;
 }
 
 p {
