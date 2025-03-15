@@ -1,0 +1,67 @@
+---
+const { image, title, text, link } = Astro.props;
+---
+
+<div class="card">
+  <div class="card-image">
+    <img src={image} alt={title} />
+    <h2 class="overlay-text">{title}</h2>
+  </div>
+  <div class="card-content">
+    <p>{text}</p>
+    <a href={link} class="read-more">Læs mere</a>
+  </div>
+</div>
+
+<style>
+  .card {
+    background-color: white;
+    overflow: hidden;
+    max-width: 350px;
+    margin: 20px;
+  }
+
+  .card-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .card-image img {
+    width: 100%;
+    display: block;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .card-content {
+    padding-top: 20px;
+    font-family: "Georgia", serif;
+    text-align: left;
+  }
+
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 800px) {
+    .overlay-text {
+      font-size: 16px;
+    }
+
+    .card-content {
+      font-size: 14px;
+    }
+  }
+</style>

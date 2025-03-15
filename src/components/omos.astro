@@ -1,0 +1,56 @@
+---
+import Card from "./card.astro";
+---
+
+<section class="info">
+  <h1>Om at være frivillig</h1>
+  <h3>Bliv frivillig og vær med til at give hjemløse og socialt udsatte en bedre hverdag.</h3>
+  <p>
+    Frivillighed er en helt central del af vores arbejde i Missionen blandt Hjemløse, og som frivillig er du med til at skabe unikke relationer og gøre en forskel for hjemløse og socialt udsatte. Se nedenfor, hvilke muligheder, der er for at blive
+    frivillig, og læs mere om, hvad det frivillige arbejde hos os indebærer.
+  </p>
+</section>
+
+<section class="carusell">
+  <Card
+    image="venner.png"
+    title="Netværksvenner"
+    text="Mange hjemløse og socialt udsatte har mistet kontakten med deres familie, og set venskaber blive til fjerne bekendtskaber. I netværksvenner skaber vi meningsfulde relationer mellem frivillige og vores brugere... "
+    link="#"
+  />
+  <Card image="mad.png" title="Sociale madklubber" text="I vores sociale madklubber er det gode måltid samlingspunktet for frivillige, hjemløse og socialt udsatte. Planlægning, indkøb og tilberedningen klares i fællesskab..." link="#" />
+  <Card
+    image="lgbt.png"
+    title="LGBT+ Venner"
+    text="LGBT+ personer i hjemløshed er særligt udsatte når det kommer til vold og diskrimination – på gaden, på herberger og på væresteder. Manglede indsigt i deres livssituation skaber friktion i systemet..."
+    link="#"
+  />
+</section>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+  h3 {
+    font-weight: 600;
+  }
+  .info {
+    max-width: 1100px;
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  .carusell {
+    margin-top: 50px;
+  }
+
+  /* COMPUTER */
+  @media (min-width: 750px) {
+    .carusell {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  }
+</style>
