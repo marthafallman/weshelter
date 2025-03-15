@@ -1,0 +1,39 @@
+---
+import Button from "./button.astro";
+---
+
+<nav>
+  <div>
+    <h1>WeShelter</h1>
+  </div>
+  <div>
+    <a href="#">Få hjælp</a>
+    <a href="#">Bliv frivillig</a>
+    <a href="#">Om</a>
+    <Button buttontext="Støt" />
+  </div>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 5% 0 5%;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin-top: -10px;
+    color: white;
+  }
+
+  a:hover {
+    color: #0067ff;
+  }
+</style>
