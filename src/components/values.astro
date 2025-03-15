@@ -1,0 +1,63 @@
+---
+
+---
+
+<section>
+  <h1>Vores værdier</h1>
+  <div class="values">
+    <h2 class="samarbejde">Samarbejde</h2>
+    <p>Hos WeShelter tror vi på, at de bedste løsninger skabes i fællesskab. Sammen med frivillige, organisationer og offentlige instanser styrker vi indsatsen for hjemløse og socialt udsatte.</p>
+    <h2 class="ligeværd">Ligeværd</h2>
+    <p>Vi mener, at alle mennesker har ret til et værdigt liv. De møder hjemløse og udsatte med respekt og omsorg og arbejder for at give dem den støtte og anerkendelse, de fortjener.</p>
+    <h2 class="ambition">Ambition</h2>
+    <p>Vi har en vision om at skabe varige forandringer. De arbejder målrettet for at udvikle nye initiativer og forbedre eksisterende indsatser, så de kan hjælpe flest muligt på den mest effektive måde.</p>
+  </div>
+</section>
+
+<style>
+  .samarbejde,
+  .ligeværd,
+  .ambition {
+    width: 220px;
+    border-radius: 50px;
+    padding: 10px 10px 15px 10px;
+    height: 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .samarbejde {
+    background-color: #d2ddfd;
+  }
+
+  .ligeværd {
+    background-color: #1e824c;
+    color: white;
+  }
+
+  .ambition {
+    background-color: #391a05;
+    color: white;
+  }
+
+  h2  {
+    text-align: center;
+  }
+
+  @media (min-width: 750px) {
+    .values {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      max-width: 1100px;
+      margin: 0 auto;
+      gap: 50px;
+    }
+
+    .samarbejde,
+    .ligeværd,
+    .ambition {
+      padding: 20px 10px 15px 10px;
+      height: 35px;
+    }
+  }
+</style>
