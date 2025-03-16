@@ -13,7 +13,8 @@ h1,
 h2,
 h3,
 a,
-a:visited {
+a:visited,
+summary {
   font-family: var(--font-primary);
   color: var(--brown);
 }
@@ -30,7 +31,7 @@ p {
 
 h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 /* COMPUTER */

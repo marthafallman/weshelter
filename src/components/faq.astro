@@ -1,0 +1,58 @@
+---
+import Dropdown from "./dropdown.astro";
+import Button from "./button.astro";
+---
+
+<section>
+  <div>
+    <h2>Har du spørgsmål?</h2>
+    <h2 class="title">Vi har dig!</h2>
+    <p>Er du nysgerrig på at blive frivillig, eller har du spørgsmål om vores arbejde? Tøv ikke med at kontakte os - vi er her for at hjælpe dig!</p>
+    <div class="cta">
+      <Button buttontext="Flere FAQs" />
+    </div>
+  </div>
+
+  <div>
+    <Dropdown title="Skal jeg have erfaring?" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam" />
+    <Dropdown title="Hvilke opgaver kan jeg få?" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam" />
+    <Dropdown title="Hvad indebærer arbejdet?" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam" />
+    <Dropdown title="Kan jeg vælge tid og sted?" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam" />
+    <Dropdown title="Er der en aldersgrænse?" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam" />
+  </div>
+</section>
+
+<style>
+  h2 {
+    font-size: 40px;
+  }
+
+  section {
+    margin-top: 80px;
+  }
+
+  .title {
+    margin-top: -30px;
+  }
+
+  .cta {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 750px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1100px;
+      margin: 0 auto;
+      margin-top: 80px;
+
+      gap: 30px;
+    }
+
+    .cta {
+      margin-top: 40px;
+    }
+  }
+</style>
