@@ -9,7 +9,6 @@ main {
   margin: 60px 25px 10px 25px;
 }
 
-h1,
 h2,
 h3,
 a,
@@ -19,8 +18,8 @@ summary {
   color: var(--brown);
 }
 
-h1,
-h2 {
+h2,
+h3 {
   font-weight: 500;
 }
 
@@ -29,14 +28,14 @@ p {
   color: var(--brown);
 }
 
-h1 {
+h2 {
   text-align: center;
   font-size: 40px;
 }
 
 /* COMPUTER */
 @media (min-width: 750px) {
-  h1 {
+  h2 {
     font-size: 60px;
   }
   body {
