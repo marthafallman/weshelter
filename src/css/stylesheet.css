@@ -29,14 +29,14 @@ p {
   color: var(--brown);
 }
 
-h1 {
+h2 {
   text-align: center;
   font-size: 40px;
 }
 
 /* COMPUTER */
 @media (min-width: 750px) {
-  h1 {
+  h2 {
     font-size: 60px;
   }
   body {
