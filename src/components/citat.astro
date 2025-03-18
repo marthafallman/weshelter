@@ -2,7 +2,7 @@
 import Citat_card from "./citat_card.astro";
 ---
 
-<article class="full_width">
+<article>
   <h2>Frivillige fortæller</h2>
   <div>
     <Citat_card
@@ -23,17 +23,21 @@ import Citat_card from "./citat_card.astro";
 </article>
 
 <style>
-  .full_width {
+  /* article {
     background-color: #f8f8f8;
     margin: 0;
-    max-width: 100%;
-    width: 100%;
   }
 
-  .full_width div {
+  div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 10%;
   }
+
+  @media (width >= 768px) {
+    div {
+      flex-direction: row;
+    }
+  } */
 </style>
