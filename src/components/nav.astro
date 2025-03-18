@@ -6,11 +6,14 @@ import Button from "./button.astro";
   <div>
     <h2>WeShelter</h2>
   </div>
-  <div>
+  <div class="menu" id="menu">
     <a href="#">Få hjælp</a>
     <a href="#">Bliv frivillig</a>
     <a href="#">Om</a>
     <Button buttontext="Støt" />
+  </div>
+  <div class="burger" id="burger" onclick="toggleMenu()">
+    &#9776; <!-- Burger-menu ikon -->
   </div>
 </nav>
 
@@ -18,7 +21,9 @@ import Button from "./button.astro";
   nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 20px 5% 0 5%;
+    padding: 10px;
   }
 
   a {
@@ -29,11 +34,62 @@ import Button from "./button.astro";
   h2 {
     font-size: 3.5vw;
     font-weight: 600;
-    margin-top: -10px;
     color: white;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 20px;
+    color: #333;
   }
 
   a:hover {
     color: #0067ff;
   }
+
+  .menu {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  /* Responsive styles for mobile */
+  @media (max-width: 768px) {
+    .menu {
+      display: none; /* Hide menu by default on small screens */
+      flex-direction: column;
+      position: absolute;
+      background-color: #333;
+      width: 200px;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 8px;
+      z-index: 5;
+    }
+
+    .menu a {
+      margin: 10px 0;
+    }
+
+    .burger {
+      display: block; /* Show burger icon on mobile */
+    }
+
+    .menu.show {
+      display: flex; /* Show menu when burger is clicked */
+    }
+  }
 </style>
+
+<!-- <script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+  }
+</script> -->

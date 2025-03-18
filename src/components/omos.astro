@@ -6,8 +6,8 @@ import Card from "./card.astro";
   <h2>Om at være frivillig</h2>
   <h3>Bliv frivillig og vær med til at give hjemløse og socialt udsatte en bedre hverdag.</h3>
   <p>
-    Frivillighed er en helt central del af vores arbejde i Missionen blandt Hjemløse, og som frivillig er du med til at skabe unikke relationer og gøre en forskel for hjemløse og socialt udsatte. Se nedenfor, hvilke muligheder, der er for at blive
-    frivillig, og læs mere om, hvad det frivillige arbejde hos os indebærer.
+    Frivillighed er en helt central del af vores arbejde i Missionen blandt Hjemløse, og som frivillig er du med til at skabe unikke relationer og gøre en forskel for hjemløse og socialt udsatte. Se
+    nedenfor, hvilke muligheder, der er for at blive frivillig, og læs mere om, hvad det frivillige arbejde hos os indebærer.
   </p>
 </section>
 
@@ -18,7 +18,30 @@ import Card from "./card.astro";
     text="Mange hjemløse og socialt udsatte har mistet kontakten med deres familie, og set venskaber blive til fjerne bekendtskaber. I netværksvenner skaber vi meningsfulde relationer mellem frivillige og vores brugere... "
     link="#"
   />
-  <Card image="mad.png" title="Sociale madklubber" text="I vores sociale madklubber er det gode måltid samlingspunktet for frivillige, hjemløse og socialt udsatte. Planlægning, indkøb og tilberedningen klares i fællesskab..." link="#" />
+  <Card
+    image="mad.png"
+    title="Sociale madklubber"
+    text="I vores sociale madklubber er det gode måltid samlingspunktet for frivillige, hjemløse og socialt udsatte. Planlægning, indkøb og tilberedningen klares i fællesskab..."
+    link="#"
+  />
+  <Card
+    image="lgbt.png"
+    title="LGBT+ Venner"
+    text="LGBT+ personer i hjemløshed er særligt udsatte når det kommer til vold og diskrimination – på gaden, på herberger og på væresteder. Manglede indsigt i deres livssituation skaber friktion i systemet..."
+    link="#"
+  />
+  <Card
+    image="venner.png"
+    title="Netværksvenner"
+    text="Mange hjemløse og socialt udsatte har mistet kontakten med deres familie, og set venskaber blive til fjerne bekendtskaber. I netværksvenner skaber vi meningsfulde relationer mellem frivillige og vores brugere... "
+    link="#"
+  />
+  <Card
+    image="mad.png"
+    title="Sociale madklubber"
+    text="I vores sociale madklubber er det gode måltid samlingspunktet for frivillige, hjemløse og socialt udsatte. Planlægning, indkøb og tilberedningen klares i fællesskab..."
+    link="#"
+  />
   <Card
     image="lgbt.png"
     title="LGBT+ Venner"
@@ -27,6 +50,23 @@ import Card from "./card.astro";
   />
 </section>
 
+<style>
+  .carusell {
+    display: flex;
+    overflow-x: auto; /* Muliggør horisontal scrolling */
+    gap: 1rem; /* Giver lidt mellemrum mellem kortene */
+    padding: 1rem 0; /* Lidt padding omkring karussellen */
+  }
+
+  .carusell::-webkit-scrollbar {
+    height: 8px; /* Laver scrollbaren lidt mindre */
+  }
+
+  .carusell::-webkit-scrollbar-thumb {
+    background-color: #888; /* Farven på scrollbaren */
+    border-radius: 10px;
+  }
+</style>
 <style>
   h2 {
     text-align: center;
@@ -46,7 +86,6 @@ import Card from "./card.astro";
   .carusell {
     margin-top: 50px;
   }
-
   /* COMPUTER */
   @media (min-width: 750px) {
     .carusell {
