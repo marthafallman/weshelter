@@ -9,7 +9,7 @@ const { number, title, text, icon } = Astro.props;
   <div class="cardcontent">
     <h4 class="title">{title}</h4>
     <p>{text}</p>
-    <img src="{icon}" alt="image" />
+    <img src={icon} alt="icon" class="icon" />
   </div>
 </article>
 
@@ -34,7 +34,7 @@ const { number, title, text, icon } = Astro.props;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 120px;
-    font-weight: bold;
+    font-weight: 600;
     z-index: 1;
   }
 
@@ -56,5 +56,6 @@ const { number, title, text, icon } = Astro.props;
 
   h4 {
     font-size: 20px;
+    font-weight: 600;
   }
 </style>
