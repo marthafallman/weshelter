@@ -65,3 +65,32 @@ const { image, title, text, link } = Astro.props;
     }
   }
 </style>
+
+<style>
+  .card {
+    min-width: 300px; /* Gør hvert kort til en minimumsstørrelse */
+    flex-shrink: 0; /* Forhindrer at kortene bliver mindre */
+    transition: transform 0.3s ease; /* Gør transformationen lidt smooth */
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card h3 {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .card p {
+    padding: 0 1rem 1rem;
+  }
+
+  .card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 0 1rem 1rem;
+    display: inline-block;
+  }
+</style>
