@@ -2,7 +2,7 @@
 import Dropdown from "./dropdown.astro";
 ---
 
-<section id="steder">
+<section id="steder" class="sections">
   <h2>Herberger</h2>
   <Dropdown
     title="Kollegiet Gl. Køge Landevej, Herberg"
@@ -14,7 +14,7 @@ import Dropdown from "./dropdown.astro";
     text="Ungeherberget Sporsløjfen er et herberg, hvor hjemløse unge mellem 18-30 år kan søge hjælp til sociale eller psykiske problemstillinger. Målgruppen på Ungeherberget Sporsløjfen er hjemløse unge mellem 18 til 30 år med sociale og/eller psykiske problemstillinger, eventuelt kombineret med et stort forbrug af rusmidler. Målgruppen er kendetegnet ved manglende kontakt til eksisterende behandlingstilbud og sociale tilbud. Boformen er et akut og midlertidig botilbud for unge. Der er plads til ca. 24 unge, som sammen med personalet er ansvarlige for både de daglige pligter og de aktiviteter, som igangsættes. Ligesom i resten af huset lægges der her vægt på medindflydelse og inddragelse af brugerne."
   />
 </section>
-<section>
+<section class="sections">
   <h2>Aktivitets- og samværstilbud</h2>
 
   <Dropdown
@@ -36,5 +36,9 @@ import Dropdown from "./dropdown.astro";
 <style>
   section {
     margin-top: 80px;
+  }
+
+  .sections {
+    margin-bottom: 100px;
   }
 </style>
