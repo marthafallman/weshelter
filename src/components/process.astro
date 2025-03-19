@@ -3,6 +3,9 @@ import Step from "./step.astro";
 ---
 
 <section class="process">
+  <div>
+    <h2>Processen</h2>
+  </div>
   <div class="content">
     <Step number="01" title="Du tilmelder dig" text="Udfyld formularen på vores hjemmeside og angiv dine præferencer for frivilligt arbejde." color="blue" icon="01.svg" />
     <Step number="02" title="Svar inden for 48 timer" text="Vi kontakter dig inden for 48 timer og tilpasser opgaverne efter dine præferencer og behov." color="green" icon="02.svg" />
@@ -21,6 +24,10 @@ import Step from "./step.astro";
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+  }
+
+  h2 {
+    padding-top: 80px;
   }
 
   /* computer */
