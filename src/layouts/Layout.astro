@@ -1,7 +1,5 @@
 ---
 import "../css/stylesheet.css";
-import Hero from "../components/hero.astro";
-import Menu from "../components/menu.astro";
 ---
 
 <!doctype html>
@@ -11,18 +9,12 @@ import Menu from "../components/menu.astro";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" />
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
+    />
     <title>Astro Basics</title>
   </head>
-  <body>
-    <header>
-      <Hero />
-      <Menu />
-    </header>
-
-    <footer></footer>
-  </body>
 </html>
 
 <style>

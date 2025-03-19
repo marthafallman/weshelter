@@ -1,0 +1,46 @@
+---
+import Nav from "./nav.astro";
+---
+
+<header>
+  <div class="navigation">
+    <Nav />
+  </div>
+  <div class="hero">
+    <img src="hero2.webp" alt="" />
+    <h1>Bliv frivillig</h1>
+  </div>
+</header>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f8f8f8;
+    max-height: 750px;
+    overflow: hidden; Skærer alt ud over max-height
+  }
+
+  .navigation {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+}
+
+  h1 {
+    font-size: clamp(40px, 10vw, 170px);
+    text-transform: uppercase;
+    color: var(--blue);
+    font-family: var(--font-primary);
+    align-self: center;
+    padding: 10px;
+  }
+</style>
