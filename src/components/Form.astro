@@ -1,109 +1,80 @@
-<section class="form-container">
+<form id="volunteer-form" class="hidden">
   <h2>Tilmeld dig som frivillig</h2>
-  <button id="toggle-form-btn">Udfyld formularen ▼</button>
-  <form id="volunteer-form" class="hidden">
-    <fieldset>
-      <legend>Personlige oplysninger</legend>
-      <div class="info-grid">
-        <div>
-          <label for="fornavn">Fornavn:</label>
-          <input type="text" id="fornavn" name="fornavn" placeholder="Skriv dit fornavn" required />
-        </div>
-        <div>
-          <label for="efternavn">Efternavn:</label>
-          <input type="text" id="efternavn" name="efternavn" placeholder="Skriv dit efternavn" required />
-        </div>
+  <fieldset>
+    <legend>Personlige oplysninger</legend>
+    <div class="info-grid">
+      <div>
+        <label for="fornavn">Fornavn:</label>
+        <input type="text" id="fornavn" name="fornavn" placeholder="Skriv dit fornavn" required />
       </div>
+      <div>
+        <label for="efternavn">Efternavn:</label>
+        <input type="text" id="efternavn" name="efternavn" placeholder="Skriv dit efternavn" required />
+      </div>
+    </div>
 
-      <div class="info-grid">
-        <div>
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" placeholder="Skriv din e-mail" required />
-        </div>
-        <div>
-          <label for="phone">Tlf-nummer:</label>
-          <input type="number" id="phone" name="phone" placeholder="Skriv dit telefonnummer" required />
-        </div>
+    <div class="info-grid">
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Skriv din e-mail" required />
       </div>
-    </fieldset>
+      <div>
+        <label for="phone">Tlf-nummer:</label>
+        <input type="number" id="phone" name="phone" placeholder="Skriv dit telefonnummer" required />
+      </div>
+    </div>
+  </fieldset>
 
-    <fieldset>
-      <legend>Hvor vil du være frivillig?</legend>
-      <div class="checkbox-grid">
-        <label><input type="checkbox" name="lokation" value="vesterbro" /> Vesterbro</label>
-        <label><input type="checkbox" name="lokation" value="indreby" /> Indre By</label>
-        <label><input type="checkbox" name="lokation" value="amager" /> Amager</label>
-        <label><input type="checkbox" name="lokation" value="norrebro" /> Nørrebro</label>
-        <label><input type="checkbox" name="lokation" value="osterbro" /> Østerbro</label>
-        <label><input type="checkbox" name="lokation" value="frederiksberg" /> Frederiksberg</label>
-      </div>
-      <label for="udyld">Er der noget, du gerne vil tilføje?</label>
-      <textarea id="udyld" name="udyld" placeholder="Her kan du skrive, hvis der er noget du gerne vil tilføje..."></textarea>
-    </fieldset>
+  <fieldset>
+    <legend>Hvor vil du være frivillig?</legend>
+    <div class="checkbox-grid">
+      <label><input type="checkbox" name="lokation" value="vesterbro" /> Vesterbro</label>
+      <label><input type="checkbox" name="lokation" value="indreby" /> Indre By</label>
+      <label><input type="checkbox" name="lokation" value="amager" /> Amager</label>
+      <label><input type="checkbox" name="lokation" value="norrebro" /> Nørrebro</label>
+      <label><input type="checkbox" name="lokation" value="osterbro" /> Østerbro</label>
+      <label><input type="checkbox" name="lokation" value="frederiksberg" /> Frederiksberg</label>
+    </div>
+    <label for="udyld">Er der noget, du gerne vil tilføje?</label>
+    <textarea id="udyld" name="udyld" placeholder="Her kan du skrive, hvis der er noget du gerne vil tilføje..."></textarea>
+  </fieldset>
 
-    <!-- Hvad vil du arbejde frivilligt med? -->
-    <fieldset>
-      <legend>Hvad vil du arbejde frivilligt med?</legend>
-      <div class="checkbox-grid">
-        <label><input type="checkbox" name="aktivitet" value="madklubber" /> De sociale madklubber</label>
-        <label><input type="checkbox" name="aktivitet" value="netværk" /> Netværksvenner</label>
-        <label><input type="checkbox" name="aktivitet" value="okonomi" /> Økonomirådgivningen</label>
-        <label><input type="checkbox" name="aktivitet" value="peer" /> Peer-to-peer</label>
-        <label><input type="checkbox" name="aktivitet" value="aktivitetsklubber" /> Aktivitetsklubber</label>
-        <label><input type="checkbox" name="aktivitet" value="lgbt" /> LGBT+ venner</label>
-        <label><input type="checkbox" name="aktivitet" value="yoga" /> Yoga</label>
-        <label><input type="checkbox" name="aktivitet" value="massage" /> Massage</label>
-        <label><input type="checkbox" name="aktivitet" value="moebelhjaelp" /> Møbelhjælp</label>
-        <label><input type="checkbox" name="aktivitet" value="ledelse" /> Ledelse af en aktivitet</label>
-        <label><input type="checkbox" name="aktivitet" value="mereinfo" /> Jeg vil bare høre mere</label>
-      </div>
-      <label for="udfyld">Er der noget, du gerne vil tilføje?</label>
-      <textarea id="udfyld" name="udfyld" placeholder="Her kan du skrive, hvis der er noget du gerne vil tilføje..."></textarea>
-    </fieldset>
-    <fieldset>
-      <legend>Hvor meget tid har du til at være frivillig?</legend>
-      <div class="checkbox-grid">
-        <label><input type="radio" name="tid" value="1-2" /> 1-2 h/uge</label>
-        <label><input type="radio" name="tid" value="2-5" /> 2-5 h/uge</label>
-        <label><input type="radio" name="tid" value="7-10" /> 7-10 h/uge</label>
-        <label><input type="radio" name="tid" value="10+" /> 10+ h/uge</label>
-        <label><input type="radio" name="tid" value="flex" /> Fleksibel</label>
-      </div>
-      <label for="udfyld">Er der noget, du gerne vil tilføje?</label>
-      <textarea id="udfyld" name="udfyld" placeholder="Her kan du skrive, hvis der er noget du gerne vil tilføje..."></textarea>
-      <div class="knap-container">
-        <button type="submit" id="submit-btn">Tilmeld</button>
-      </div>
-    </fieldset>
-  </form>
-</section>
+  <fieldset>
+    <legend>Hvad vil du arbejde frivilligt med?</legend>
+    <div class="checkbox-grid">
+      <label><input type="checkbox" name="aktivitet" value="madklubber" /> De sociale madklubber</label>
+      <label><input type="checkbox" name="aktivitet" value="netværk" /> Netværksvenner</label>
+      <label><input type="checkbox" name="aktivitet" value="okonomi" /> Økonomirådgivningen</label>
+      <label><input type="checkbox" name="aktivitet" value="peer" /> Peer-to-peer</label>
+      <label><input type="checkbox" name="aktivitet" value="aktivitetsklubber" /> Aktivitetsklubber</label>
+      <label><input type="checkbox" name="aktivitet" value="lgbt" /> LGBT+ venner</label>
+      <label><input type="checkbox" name="aktivitet" value="yoga" /> Yoga</label>
+      <label><input type="checkbox" name="aktivitet" value="massage" /> Massage</label>
+      <label><input type="checkbox" name="aktivitet" value="moebelhjaelp" /> Møbelhjælp</label>
+      <label><input type="checkbox" name="aktivitet" value="ledelse" /> Ledelse af en aktivitet</label>
+      <label><input type="checkbox" name="aktivitet" value="mereinfo" /> Jeg vil bare høre mere</label>
+    </div>
+    <label for="udfyld">Er der noget, du gerne vil tilføje?</label>
+    <textarea id="udfyld" name="udfyld" placeholder="Her kan du skrive, hvis der er noget du gerne vil tilføje..."></textarea>
+  </fieldset>
+  <fieldset>
+    <legend>Hvor meget tid har du til at være frivillig?</legend>
+    <div class="checkbox-grid">
+      <label><input type="radio" name="tid" value="1-2" /> 1-2 h/uge</label>
+      <label><input type="radio" name="tid" value="2-5" /> 2-5 h/uge</label>
+      <label><input type="radio" name="tid" value="7-10" /> 7-10 h/uge</label>
+      <label><input type="radio" name="tid" value="10+" /> 10+ h/uge</label>
+      <label><input type="radio" name="tid" value="flex" /> Fleksibel</label>
+    </div>
+    <label for="udfyld">Er der noget, du gerne vil tilføje?</label>
+    <textarea id="udfyld" name="udfyld" placeholder="Her kan du skrive, hvis der er noget du gerne vil tilføje..."></textarea>
+    <div class="knap-container">
+      <button type="submit" id="submit-btn">Tilmeld</button>
+    </div>
+  </fieldset>
+</form>
 
 <style>
-  /* Skjuler formularen fra start */
-  /* Skjuler formularen fra start */
-  .hidden {
-    display: none;
-  }
-
-  /* Knap styling */
-  #toggle-form-btn {
-    background-color: #0067ff;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 40px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-  }
-
-  #toggle-form-btn:hover {
-    background-color: white;
-    border: 2px solid #0067ff;
-    color: #0067ff;
-  }
   form {
     max-width: 800px;
     font-family: "Work Sans", sans-serif;
