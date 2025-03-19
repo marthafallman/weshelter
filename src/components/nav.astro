@@ -33,7 +33,7 @@ import Button from "./button.astro";
   }
 
   h2 {
-    font-size: 3.5vw;
+    font-size: clamp(22px, 5vw, 50px);
     font-weight: 600;
     color: white;
     margin: 0;
@@ -60,8 +60,8 @@ import Button from "./button.astro";
 
   .burger span {
     display: block;
-    width: 30px;
-    height: 3px;
+    width: 22px;
+    height: 2px;
     background: #0067ff;
     transition: 0.3s;
     border-radius: 2px;
@@ -87,7 +87,6 @@ import Button from "./button.astro";
     background-color: #f8f8f8;
     right: 0;
     top: 0;
-    /* width: 200px; */
     text-align: left;
     z-index: 3000;
   }
@@ -98,10 +97,9 @@ import Button from "./button.astro";
     padding: 40px;
   }
 
-  /* 🖥️ Desktop-visning fra 1000px */
-  @media (width >= 1000px) {
+  @media (width >= 900px) {
     .burger {
-      display: none; /* Skjul burger */
+      display: none;
     }
 
     .menu {
@@ -112,6 +110,7 @@ import Button from "./button.astro";
       width: auto;
       padding: 0;
       align-items: center;
+      gap: 10px;
     }
 
     .menu a {
