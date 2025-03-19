@@ -1,0 +1,70 @@
+<section class="grid-container">
+  <div class="grid-item">
+    <p>282.000 voksne danskere viser tegn på hjemløshed, psykisk sygdom eller misbrug</p>
+    <div class="line"></div>
+    <img src="misbrug.svg" alt="Hjemløs person" />
+  </div>
+  <div class="grid-item">
+    <p>6.400 er hjemløse</p>
+    <div class="line"></div>
+    <img src="hjemloes2.svg" alt="Hjemløs mand med hund" />
+  </div>
+  <div class="grid-item">
+    <p>Ensomhed forårsager 2.200 dødsfald årligt</p>
+    <div class="line"></div>
+    <img src="ensomhed.svg" alt="Ensom gruppe af mennesker" />
+  </div>
+  <div class="grid-item">
+    <p>10% af danskerne lider af psykisk sygdom</p>
+    <div class="line"></div>
+    <img src="psykisk_sygdom.svg" alt="Person med mentale udfordringer" />
+  </div>
+</section>
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+  }
+
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  p {
+    font-family: "Work sans";
+    font-weight: 200;
+  }
+
+  .line {
+    width: 1px;
+    height: 70px;
+    background-color: #391a05;
+    margin: 10px 0;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 40px;
+      text-align: center;
+      padding: 40px;
+      margin: 0 auto;
+      max-width: 1100px;
+    }
+  }
+</style>
