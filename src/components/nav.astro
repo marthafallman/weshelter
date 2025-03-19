@@ -6,29 +6,27 @@ import Button from "./button.astro";
   <div>
     <h2>WeShelter</h2>
   </div>
-  <div class="menu" id="menu">
+
+  <!-- Checkbox der styrer menuens visning -->
+  <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+  <label for="menu-toggle" class="burger">&#9776;</label>
+
+  <div class="menu">
     <a href="#">Få hjælp</a>
     <a href="#">Bliv frivillig</a>
     <a href="#">Om</a>
     <Button buttontext="Støt" />
   </div>
-  <div class="burger" id="burger" onclick="toggleMenu()">
-    &#9776; <!-- Burger-menu ikon -->
-  </div>
 </nav>
 
 <style>
+  /* Grundlæggende styling */
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 5% 0 5%;
+    margin: 20px 5%;
     padding: 10px;
-  }
-
-  a {
-    text-decoration: none;
-    margin: 20px;
   }
 
   h2 {
@@ -59,13 +57,20 @@ import Button from "./button.astro";
     cursor: pointer;
   }
 
-  /* Responsive styles for mobile */
-  @media (max-width: 768px) {
+  /* Skjuler checkbox */
+  .menu-checkbox {
+    display: none;
+  }
+
+  /* Mobilvenlig burger-menu */
+  @media (max-width: 1000px) {
     .menu {
-      display: none; /* Hide menu by default on small screens */
+      display: none;
       flex-direction: column;
       position: absolute;
-      background-color: #333;
+      top: 60px;
+      background-color: #f8f8f8;
+      right: 5%;
       width: 200px;
       text-align: center;
       padding: 20px 0;
@@ -74,22 +79,17 @@ import Button from "./button.astro";
     }
 
     .menu a {
+      color: #333;
       margin: 10px 0;
     }
 
     .burger {
-      display: block; /* Show burger icon on mobile */
+      display: block;
     }
 
-    .menu.show {
-      display: flex; /* Show menu when burger is clicked */
+    /* Når checkbox er tjekket, vis menuen */
+    .menu-checkbox:checked + .burger + .menu {
+      display: flex;
     }
   }
 </style>
-
-<!-- <script>
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("show");
-  }
-</script> -->
