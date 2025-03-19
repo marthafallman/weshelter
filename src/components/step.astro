@@ -1,10 +1,10 @@
 ---
-const { number, title, text, icon } = Astro.props;
+const { number, title, text, icon, color } = Astro.props;
 ---
 
 <article class="card">
   <div>
-    <h3 class="stepnumber">{number}</h3>
+    <h3 class={color} class="stepnumber">{number}</h3>
   </div>
   <div class="cardcontent">
     <h4 class="title">{title}</h4>
@@ -14,21 +14,18 @@ const { number, title, text, icon } = Astro.props;
 </article>
 
 <style>
-  .steps-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
   .card {
     position: relative; /* Gör att .stepnumber kan placeras relativt denna */
-    padding: 160px 20px;
+    padding: 160px 20px 60px 20px;
     text-align: center;
     transition: transform 0.3s ease;
   }
 
-  .stepnumber {
+  .stepnumber,
+  .blue,
+  .green,
+  .brown,
+  .darkblue {
     position: absolute;
     top: 3%;
     left: 50%;
@@ -45,7 +42,11 @@ const { number, title, text, icon } = Astro.props;
     z-index: 2; /* Högre än stepnumber */
   }
 
-  .card:hover .stepnumber {
+  .card:hover .stepnumber,
+  .card:hover .blue,
+  .card:hover .green,
+  .card:hover .brown,
+  .card:hover .darkblue {
     transform: translate(-50%, -70%);
   }
 
@@ -57,5 +58,22 @@ const { number, title, text, icon } = Astro.props;
   h4 {
     font-size: 20px;
     font-weight: 600;
+  }
+
+  .blue {
+    color: #baccff;
+  }
+  .green {
+    color: #1e824c;
+  }
+  .brown {
+    color: #391a05;
+  }
+  .darkblue {
+    color: #0067ff;
+  }
+
+  .icon {
+    margin-top: 25px;
   }
 </style>
