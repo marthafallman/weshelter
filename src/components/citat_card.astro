@@ -13,17 +13,24 @@ const { image, paragraph } = Astro.props;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .citat_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
   }
 
   img {
-    width: 250px; /* Justér størrelsen efter behov */
-    height: auto;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
-    object-fit: cover; /* Sørger for, at billedet ikke strækkes */
-  }
-
-  p {
-    font-style: italic;
+    object-fit: cover;
   }
 </style>

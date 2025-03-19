@@ -5,6 +5,10 @@
   --font-secondary: "Georgia", serif;
 }
 
+main{
+  margin: 0 auto;
+}
+
 .half_width {
   margin: 60px 25px 10px 25px;
 }
@@ -40,8 +44,5 @@ h2 {
   h2 {
     font-size: 60px;
   }
-  body {
-    margin: 0 auto;
-    max-width: 1500px;
-  }
+
 }

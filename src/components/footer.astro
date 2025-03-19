@@ -1,0 +1,129 @@
+<footer>
+  <section>
+    <div class="info">
+      <h2>WeShelter</h2>
+      <p>
+        Vi arbejder for at give hjemløse og udsatte bedre vilkår. Målet er at
+        gøre op med hjemløshed, ensomhed og psykisk mistrivsel. Arbejdet sker på
+        herberger, væresteder og i frivillige indsatser.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="links">
+        <div>
+          <h4>Få hjælp</h4>
+          <ul>
+            <li><a href="#">Herberger</a></li>
+            <li><a href="#">Væresteder</a></li>
+            <li><a href="#">Aktiviteter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Genveje</h4>
+          <ul>
+            <li><a href="#">Forside</a></li>
+            <li><a href="#">Om os</a></li>
+            <li><a href="#">Vores arbejde</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h4>Kontakt</h4>
+        <p>Slotsgade 2, 1. sal<br />2200 København N</p>
+        <p>
+          Tlf <a href="tel:36161113">36161113</a><br />
+          <a href="mailto:kontakt@weshelter.dk">kontakt@weshelter.dk</a><br />
+          CVR 8096515
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="copyright">
+    <p>Copyright © 2025 Fonden Missionen blandt Hjemløse</p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: #d2ddfd;
+    color: #4a2f1f;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .info {
+    max-width: 400px;
+    min-width: 300px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .links div:first-child {
+    margin-bottom: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: 0.25rem;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #4a2f1f;
+  }
+
+  @media (width >= 768px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (width >= 1024px) {
+    .info {
+      margin-left: 60px;
+    }
+
+    .copyright p {
+      margin-left: 60px;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>
