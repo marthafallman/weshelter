@@ -1,0 +1,36 @@
+---
+const { image, paragraph } = Astro.props;
+---
+
+<div class="citat_card">
+  <img src={image} alt="Frivillig" />
+  <p>{paragraph}</p>
+</div>
+
+<style>
+  .citat_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .citat_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+</style>

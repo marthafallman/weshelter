@@ -1,0 +1,37 @@
+---
+import Citat_card from "./citat_card.astro";
+---
+
+<article>
+  <h2>Frivillige fortæller</h2>
+  <div>
+    <Citat_card
+      image="public/img/frivillig1.webp"
+      paragraph='"At være frivillig har givet mig en følelse af formål og fællesskab. Jeg kan virkelig se, at mit arbejde gør en forskel"'
+    />
+
+    <Citat_card
+      image="public/img/frivillig2.webp"
+      paragraph='"Den oplæring og støtte, jeg fik, gjorde mig tryg i rollen. Jeg følte mig aldrig alene i mit frivillige arbejde"'
+    />
+
+    <Citat_card
+      image="public/img/frivillig3.webp"
+      paragraph='"Jeg var i tvivl om, hvor meget tid jeg kunne afsætte, men fleksibiliteten gjorde det nemt at passe ind i min hverdag"'
+    />
+  </div>
+</article>
+
+<style>
+  article {
+    background-color: #f8f8f8;
+    margin-bottom: 100px;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+</style>
