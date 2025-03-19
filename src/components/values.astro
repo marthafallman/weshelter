@@ -2,15 +2,27 @@
 
 ---
 
-<section>
+<section class="sections">
   <h2>Vores værdier</h2>
   <div class="values">
     <h3 class="samarbejde">Samarbejde</h3>
-    <p>Hos WeShelter tror vi på, at de bedste løsninger skabes i fællesskab. Sammen med frivillige, organisationer og offentlige instanser styrker vi indsatsen for hjemløse og socialt udsatte.</p>
+    <p>
+      Hos WeShelter tror vi på, at de bedste løsninger skabes i fællesskab.
+      Sammen med frivillige, organisationer og offentlige instanser styrker vi
+      indsatsen for hjemløse og socialt udsatte.
+    </p>
     <h3 class="ligeværd">Ligeværd</h3>
-    <p>Vi mener, at alle mennesker har ret til et værdigt liv. De møder hjemløse og udsatte med respekt og omsorg og arbejder for at give dem den støtte og anerkendelse, de fortjener.</p>
+    <p>
+      Vi mener, at alle mennesker har ret til et værdigt liv. De møder hjemløse
+      og udsatte med respekt og omsorg og arbejder for at give dem den støtte og
+      anerkendelse, de fortjener.
+    </p>
     <h3 class="ambition">Ambition</h3>
-    <p>Vi har en vision om at skabe varige forandringer. De arbejder målrettet for at udvikle nye initiativer og forbedre eksisterende indsatser, så de kan hjælpe flest muligt på den mest effektive måde.</p>
+    <p>
+      Vi har en vision om at skabe varige forandringer. De arbejder målrettet
+      for at udvikle nye initiativer og forbedre eksisterende indsatser, så de
+      kan hjælpe flest muligt på den mest effektive måde.
+    </p>
   </div>
 </section>
 
@@ -42,16 +54,16 @@
     color: white;
   }
 
-  h2 {
-    text-align: center;
-  }
-
   section {
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 
-  @media (min-width: 750px) {
+  .values p {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 768px) {
     .values {
       display: grid;
       grid-template-columns: 1fr 4fr;
@@ -66,5 +78,9 @@
       padding: 20px 10px 15px 10px;
       height: 35px;
     }
+    /* 
+    .values p {
+      text-align: left;
+    } */
   }
 </style>

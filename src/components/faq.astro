@@ -3,7 +3,7 @@ import Dropdown from "./dropdown.astro";
 import Button from "./button.astro";
 ---
 
-<section id="faq">
+<section id="faq" class="sections">
   <div>
     <h3>Har du spørgsmål?</h3>
     <h3 class="title">Vi har dig!</h3>
@@ -47,10 +47,6 @@ import Button from "./button.astro";
     text-align: left;
   }
 
-  section {
-    margin-top: 80px;
-  }
-
   .title {
     margin-top: -35px;
   }
@@ -64,10 +60,8 @@ import Button from "./button.astro";
     section {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      max-width: 1100px;
       margin: 0 auto;
       margin-top: 80px;
-
       gap: 30px;
     }
 

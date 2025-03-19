@@ -2,7 +2,7 @@
 import Card from "./card.astro";
 ---
 
-<section class="info" id="omos">
+<section class="info sections" id="omos">
   <h2>Om at være frivillig</h2>
   <h3>
     Bliv frivillig og vær med til at give hjemløse og socialt udsatte en bedre
@@ -17,7 +17,7 @@ import Card from "./card.astro";
   </p>
 </section>
 
-<section class="carusell">
+<section class="carusell sections">
   <Card
     image="venner.png"
     title="Netværksvenner"
@@ -61,7 +61,6 @@ import Card from "./card.astro";
     display: flex;
     overflow-x: auto; /* Muliggør horisontal scrolling */
     gap: 1rem; /* Giver lidt mellemrum mellem kortene */
-    padding: 1rem 0; /* Lidt padding omkring karussellen */
   }
 
   .carusell::-webkit-scrollbar {
@@ -73,9 +72,11 @@ import Card from "./card.astro";
     border-radius: 10px;
   }
 </style>
+
 <style>
-  h2 {
-    text-align: center;
+  h2,
+  h3 {
+    text-align: left;
   }
   h3 {
     font-weight: 600;
@@ -83,25 +84,25 @@ import Card from "./card.astro";
     margin-bottom: 50px;
   }
   .info {
-    max-width: 1100px;
-    text-align: center;
-    margin: 30px auto;
-    margin-top: 80px;
+    text-align: left;
   }
 
   .carusell {
     margin-top: 50px;
   }
   /* COMPUTER */
-  @media (min-width: 750px) {
-    .carusell {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+  @media (min-width: 768px) {
     section {
       margin-top: 80px;
+    }
+
+    h2,
+    h3 {
+      text-align: center;
+    }
+
+    .info p {
+      text-align: center;
     }
   }
 </style>
