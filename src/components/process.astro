@@ -7,10 +7,34 @@ import Step from "./step.astro";
     <h2>Processen</h2>
   </div>
   <div class="content">
-    <Step number="01" title="Du tilmelder dig" text="Udfyld formularen på vores hjemmeside og angiv dine præferencer for frivilligt arbejde." color="blue" icon="01.svg" />
-    <Step number="02" title="Svar inden for 48 timer" text="Vi kontakter dig inden for 48 timer og tilpasser opgaverne efter dine præferencer og behov." color="green" icon="02.svg" />
-    <Step number="03" title="Du får en kontaktperson" text="En mentor vil støtte dig og give dig grundig oplæring, tilpasset dine individuelle ønsker og behov." color="brown" icon="03.svg" />
-    <Step number="04" title="Du er med som frivillig!" text="Du er nu en del af WeShelter og kan begynde at gøre en forskel med opgaver, der passer til dig!" color="darkblue" icon="04.svg" />
+    <Step
+      number="01"
+      title="Du tilmelder dig"
+      text="Udfyld formularen på vores hjemmeside og angiv dine præferencer for frivilligt arbejde."
+      color="blue"
+      icon="01.svg"
+    />
+    <Step
+      number="02"
+      title="Svar inden for 48 timer"
+      text="Vi kontakter dig inden for 48 timer og tilpasser opgaverne efter dine præferencer og behov."
+      color="green"
+      icon="02.svg"
+    />
+    <Step
+      number="03"
+      title="Du får en kontaktperson"
+      text="En mentor vil støtte dig og give dig grundig oplæring, tilpasset dine individuelle ønsker og behov."
+      color="brown"
+      icon="03.svg"
+    />
+    <Step
+      number="04"
+      title="Du er med som frivillig!"
+      text="Du er nu en del af WeShelter og kan begynde at gøre en forskel med opgaver, der passer til dig!"
+      color="darkblue"
+      icon="04.svg"
+    />
   </div>
 </section>
 
@@ -20,7 +44,7 @@ import Step from "./step.astro";
   }
 
   .content {
-    max-width: 1000px;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
@@ -34,7 +58,6 @@ import Step from "./step.astro";
   /* computer */
   @media (min-width: 750px) {
     .content {
-      max-width: 900px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       margin: 0 auto;

@@ -16,8 +16,8 @@ const { number, title, text, icon, color } = Astro.props;
 <style>
   .card {
     position: relative; /* Gör att .stepnumber kan placeras relativt denna */
-    padding: 160px 20px 60px 20px;
-    text-align: center;
+    padding: 130px 0px 60px 0px;
+    text-align: left;
     transition: transform 0.3s ease;
   }
 
@@ -30,7 +30,7 @@ const { number, title, text, icon, color } = Astro.props;
     top: 3%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 120px;
+    font-size: 100px;
     font-weight: 600;
     z-index: 1;
   }
@@ -75,5 +75,26 @@ const { number, title, text, icon, color } = Astro.props;
 
   .icon {
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (width >= 768px) {
+  }
+
+  @media (width >= 1024px) {
+    .card {
+      padding: 160px 20px 60px 0px;
+      text-align: center;
+    }
+
+    .stepnumber,
+    .blue,
+    .green,
+    .brown,
+    .darkblue {
+      font-size: 120px;
+      top: 4%;
+    }
   }
 </style>
