@@ -1,27 +1,35 @@
-<section class="grid-container">
-  <div class="grid-item">
-    <p>282.000 voksne danskere viser tegn på hjemløshed, psykisk sygdom eller misbrug</p>
-    <div class="line"></div>
-    <img src="misbrug.svg" alt="Hjemløs person" />
-  </div>
-  <div class="grid-item">
-    <p>6.400 er hjemløse</p>
-    <div class="line"></div>
-    <img src="hjemloes2.svg" alt="Hjemløs mand med hund" />
-  </div>
-  <div class="grid-item">
-    <p>Ensomhed forårsager 2.200 dødsfald årligt</p>
-    <div class="line"></div>
-    <img src="ensomhed.svg" alt="Ensom gruppe af mennesker" />
-  </div>
-  <div class="grid-item">
-    <p>10% af danskerne lider af psykisk sygdom</p>
-    <div class="line"></div>
-    <img src="psykisk_sygdom.svg" alt="Person med mentale udfordringer" />
+<section class="section-background">
+  <div class="grid-content">
+    <div class="grid-item">
+      <p>282.000 voksne danskere viser tegn på hjemløshed, psykisk sygdom eller misbrug</p>
+      <div class="line"></div>
+      <img src="misbrug.svg" alt="Hjemløs person" />
+    </div>
+    <div class="grid-item">
+      <p>6.400 er hjemløse</p>
+      <div class="line"></div>
+      <img src="hjemloes2.svg" alt="Hjemløs mand med hund" />
+    </div>
+    <div class="grid-item">
+      <p>Ensomhed forårsager 2.200 dødsfald årligt</p>
+      <div class="line"></div>
+      <img src="ensomhed.svg" alt="Ensom gruppe af mennesker" />
+    </div>
+    <div class="grid-item">
+      <p>10% af danskerne lider af psykisk sygdom</p>
+      <div class="line"></div>
+      <img src="psykisk_sygdom.svg" alt="Person med mentale udfordringer" />
+    </div>
   </div>
 </section>
+
 <style>
-  .grid-container {
+  .section-background {
+    width: 100vw;
+    background-color: #f8f8f8;
+  }
+
+  .grid-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -56,7 +64,7 @@
   }
 
   @media (min-width: 768px) {
-    .grid-container {
+    .grid-content {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 40px;
