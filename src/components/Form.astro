@@ -109,16 +109,17 @@
   input[type="number"],
   textarea {
     width: 100%;
+    max-width: 100%;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
   }
-
   .checkbox-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 8px;
     margin-bottom: 30px;
   }
