@@ -28,7 +28,7 @@ const { number, title, text, icon, color } = Astro.props;
   .darkblue {
     position: absolute;
     top: 3%;
-    left: 50%;
+    left: 46%;
     transform: translate(-50%, -50%);
     font-size: 100px;
     font-weight: 600;
@@ -40,6 +40,7 @@ const { number, title, text, icon, color } = Astro.props;
     background-color: #f8f8f8;
     padding: 20px;
     z-index: 2; /* Högre än stepnumber */
+    min-width: 125px;
   }
 
   .card:hover .stepnumber,
